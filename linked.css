@@ -1,0 +1,123 @@
+<style>
+
+  body
+  {	background: #0000ff;
+    color: #ffff00;	}
+
+  h1 
+  {	font-size: 27pt;
+    font-family: "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+    line-height: 80px;
+    padding-top: 10px;
+    margin: 0;	}
+
+  .desc 
+  {	font-size: 11pt;
+    font-family: "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+    line-height: 32px;
+    padding-top: 10px;
+	font-weight: normal;
+    margin: 0;	}
+
+  .marquee-text 
+  {	color:#d60713;
+    font-size: 11pt;
+    font-family: "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+    line-height: 30px;
+    margin: 0;	}
+
+  table 
+  {	border-collapse: collapse;
+    width: 100%; }
+
+  td.menu-item 
+  {	text-align: center;
+    vertical-align: middle;
+    font-size: 13pt;
+    font-family: "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+    border-right: 1px solid black;
+    height: 40px; }
+
+  .left-menu, .right-menu 
+  {	background-color: #d60713;
+	width: 25%;
+    color: white;
+    text-align: center;
+    min-height: 300px; }
+
+  .left-menu a, .right-menu a
+  {	color: white;
+	font-size: 12pt;
+	font-family: "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+	font-weight: normal;
+    margin: 0 5px; }
+
+  .table-wrapper td 
+  {	vertical-align: top;
+    padding: 2px; }
+
+  .car-img 
+  {	background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    width: 180px;
+    height: auto;
+    box-sizing: border-box;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+    display: block;
+    margin: 10px auto; }
+
+  .team-links 
+  {	margin-top: 10px;
+    font-weight: bold;
+    font-size: 13pt; }
+
+  .center-content 
+  {	text-align: center; }
+
+  .center-content img 
+  {	width: 105%;
+    max-width: 100%;
+    height: auto; }
+
+  .center-content p 
+  {	font-size: 15pt;
+	font-weight: bold;
+    font-family: "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+    line-height: 32px;
+    padding-top: 10px;
+    margin: 0; }
+  
+  form 
+  {	display: flex;
+    justify-content: center;
+    margin-top: 30px; }
+
+  input[type="text"], textarea, select 
+  { width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue", "Segoe UI", Arial, sans-serif; }
+
+  input[type="submit"] 
+  {	padding: 5px 10px;
+    font-size: 13px;
+    cursor: pointer; }
+
+.invoice-table 
+  {	background-color: white;
+	width: 100%;
+	margin: 20px auto 40px auto; /* Atas Tengah Bawah */
+	border-collapse: collapse;
+	font-family: "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+	font-size: 12pt; }
+
+.invoice-table td 
+  {	padding: 15px;
+	border-bottom: 1px solid #ddd; }
+
+.invoice-table .label 
+  { font-weight: normal;
+	width: 180px; }
+
+</style>
