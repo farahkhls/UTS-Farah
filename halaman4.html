@@ -1,0 +1,97 @@
+<html>
+<head>
+  <title>LEGO - Invoice</title>
+  <link rel="stylesheet" href="linked.css" type="text/css">
+</head>
+
+<body>
+
+  <table width="100%" style="border-collapse: collapse; background-color: #ffdc3c">
+    <tr>
+      <td width="100" align="center" style="border: none;">
+        <img src="logo.jpg" width="65" height="65">
+      </td>
+      <td align="center" height="90" style="border:none;">
+        <h1 id="cth1">LEGO Minifigures F1 Collectible Race Cars</h1>
+      </td>
+    </tr>
+  </table>
+
+  <table width="100%" bgcolor="white" style="border:none;">
+    <tr>
+      <td height="30">
+        <marquee direction="left">
+          <span class="marquee-text">Thank you for your order! Your invoice is shown below.</span>
+        </marquee>
+      </td>
+    </tr>
+  </table>
+
+  <table width="100%" bgcolor="#ebe8e8" style="border:none;">
+    <tr>
+      <td class="menu-item" width="33%"><a href="index.html">Product</a></td>
+      <td class="menu-item" width="34%"><a href="halaman2.html">Buy Now</a></td>
+      <td class="menu-item" width="33%"><a href="halaman3.html">About Us</a></td>
+    </tr>
+  </table>
+
+  <table class="invoice-table" cellpadding="10" cellspacing="5">
+    <tr>
+      <td class="label">Full Name</td>
+      <td>:</td>
+      <td id="inv-name"></td>
+    </tr>
+    <tr>
+      <td class="label">Shipping Address</td>
+      <td>:</td>
+      <td id="inv-address"></td>
+    </tr>
+    <tr>
+      <td class="label">Product</td>
+      <td>:</td>
+      <td id="inv-product"></td>
+    </tr>
+    <tr>
+      <td class="label">Amount</td>
+      <td>:</td>
+      <td id="inv-amount"></td>
+    </tr>
+    <tr>
+      <td class="label">Payment Method</td>
+      <td>:</td>
+      <td id="inv-payment"></td>
+    </tr>
+    <tr>
+      <td class="label">Total Price</td>
+      <td>:</td>
+      <td id="inv-total"></td>
+    </tr>
+  </table>
+
+  <table width="100%" bgcolor="#ebe8e8" class="desc" style="border:none; margin-top: 40px;">
+    <tr>
+      <td align="center" height="30">
+        © 2025 LEGO F1 Mini Store | Farah Khalisha Najat - 10524087
+      </td>
+    </tr>
+  </table>
+
+  <script>
+    const name = localStorage.getItem("name");
+    const address = localStorage.getItem("address");
+    const product = localStorage.getItem("product");
+    const amount = parseInt(localStorage.getItem("amount"));
+    const payment = localStorage.getItem("payment");
+
+    const pricePerItem = 75000;
+    const total = pricePerItem * amount;
+
+    document.getElementById("inv-name").textContent = name;
+    document.getElementById("inv-address").textContent = address;
+    document.getElementById("inv-product").textContent = product + " Minifigures";
+    document.getElementById("inv-amount").textContent = amount + " pcs";
+    document.getElementById("inv-payment").textContent = payment;
+    document.getElementById("inv-total").textContent = "Rp " + total.toLocaleString("id-ID");
+  </script>
+</body>
+</html>
